@@ -1,8 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
 
 export default function ViewPosts() {
-  const user = useSelector((state) => state.currentUser.currentUser);
+  const location = useLocation()
+  const {user} = location.state
   const allPosts = useSelector((state) => state.allPosts.allPosts);
 
   return (
