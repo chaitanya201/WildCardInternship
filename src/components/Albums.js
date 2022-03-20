@@ -5,10 +5,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateCurrentUser } from "../store/currentUser";
 import {updateAllAlbums} from "../store/allAlbums"
 export default function Albums() {
-  const user = useSelector((state) => state.currentUser.currentUser);
-  const allUsers = useSelector((state) => state.allUsers.allUsers);
-  const allAlbums = useSelector((state) => state.allAlbums.allAlbums);
-  const dispatch = useDispatch();
   useEffect(() => {
     
     const getAllAlbums = async () => {
@@ -19,6 +15,10 @@ export default function Albums() {
     };
     getAllAlbums();
   }, []);
+  const user = useSelector((state) => state.currentUser.currentUser);
+  const allUsers = useSelector((state) => state.allUsers.allUsers);
+  const allAlbums = useSelector((state) => state.allAlbums.allAlbums);
+  const dispatch = useDispatch();
 
   console.log("all posts are ", allAlbums);
   return (
