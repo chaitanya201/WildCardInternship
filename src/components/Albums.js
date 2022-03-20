@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateCurrentUser } from "../store/currentUser";
 import {updateAllAlbums} from "../store/allAlbums"
 export default function Albums() {
+  console.log("after build");
   useEffect(() => {
     
     const getAllAlbums = async () => {
