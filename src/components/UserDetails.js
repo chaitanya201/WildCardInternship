@@ -49,7 +49,8 @@ export default function UserDetails() {
         </div>
         <div className=" px-2 space-x-1 py-2">
           <label htmlFor="address">Address: </label>
-          <div className="py-3 px-7">
+         {
+           user.address ?  <div className="py-3 px-7">
             <div className="flex space-x-5">
               <label htmlFor="street">Street: </label>
               <input
@@ -105,9 +106,11 @@ export default function UserDetails() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> : <div></div>
+         }
         </div>
-        <div>
+        {
+          user.company ? <div>
           <label htmlFor="company">Company: </label>
           <div className="px-4">
           <div className="flex px-4 space-x-3 py-3">
@@ -128,7 +131,8 @@ export default function UserDetails() {
             />
           </div>
           </div>
-        </div>
+        </div> : <div></div>
+        }
         <div className="flex space-x-64 py-3">
           <div>
             <Link to="/view-posts">

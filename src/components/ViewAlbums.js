@@ -1,10 +1,13 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
+import { updateAllAlbums } from "../store/allAlbums";
 
 export default function ViewAlbums() {
     const location = useLocation();
-  const [allAlbums, setAllAlbums] = useState(null);
+    const dispatch = useDispatch()
+    const allAlbums = useSelector((state) => state.allAlbums.allAlbums)
   const { user } = location.state;
   console.log("location is ", location.state);
   useEffect(() => {
@@ -12,7 +15,7 @@ export default function ViewAlbums() {
       const getAllAlbums = await axios.get(
         "https://jsonplaceholder.typicode.com/albums/"
       );
-      setAllAlbums(getAllAlbums.data);
+      dispatch( updateAllAlbums(getAllAlbums.data));
       console.log(getAllAlbums.data, " all albums");
     };
     getAllUserAlbums();

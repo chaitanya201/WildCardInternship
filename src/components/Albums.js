@@ -26,7 +26,8 @@ export default function Albums() {
       <div className="py-3 uppercase font-semibold text-lg">
         <h1>Albums</h1>
       </div>
-      <table>
+      {
+        user ? <table>
         <thead>
           <tr className="bg-teal-500">
             <th className="space-x-4">Id</th>
@@ -82,7 +83,8 @@ export default function Albums() {
             </tr>
           )}
         </tbody>
-      </table>
+      </table> : <div> failed to get user data </div>
+      }
     </div>
   );
 }
