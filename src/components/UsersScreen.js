@@ -60,7 +60,8 @@ const UsersScreen = () => {
                             <div className="flex px-2 space-x-6">
                               <div className="py-3 bg-green-500 rounded-t-lg rounded-b-lg rotate-90 border-solid shadow-md max-w-lg min-w-max ">
                                 <Link className="bg-green-400 rounded-full"
-                                  to="/view-posts"
+                                  to="/view-posts" 
+                                  state={{user: user}}
                                   onClick={() => {
                                     dispatch(updateCurrentUser(user));
                                   }}
