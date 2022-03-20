@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/WildCardInternship/static/css/main.e6c13ad2.css",
-    "main.js": "/WildCardInternship/static/js/main.836144c5.js",
+    "main.js": "/WildCardInternship/static/js/main.b1664013.js",
     "static/js/787.3ce4cc4d.chunk.js": "/WildCardInternship/static/js/787.3ce4cc4d.chunk.js",
     "static/media/instagram-icon.png": "/WildCardInternship/static/media/instagram-icon.3b83dfbac960f81cbc94.png",
     "index.html": "/WildCardInternship/index.html",
     "main.e6c13ad2.css.map": "/WildCardInternship/static/css/main.e6c13ad2.css.map",
-    "main.836144c5.js.map": "/WildCardInternship/static/js/main.836144c5.js.map",
+    "main.b1664013.js.map": "/WildCardInternship/static/js/main.b1664013.js.map",
     "787.3ce4cc4d.chunk.js.map": "/WildCardInternship/static/js/787.3ce4cc4d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.836144c5.js"
+    "static/js/main.b1664013.js"
   ]
 }
